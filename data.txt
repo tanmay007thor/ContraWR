@@ -1,0 +1,74 @@
+1 ) rf metrix
+{'model_name': 'Random Forest',
+ 'accuracy': 0.8429291111910759,
+ 'precision': 0.8521472302101504,
+ 'recall': 0.8429291111910759,
+ 'f1_score': 0.8228815465944818,
+ 'macro_precision': 0.9005320589363244,
+ 'macro_recall': 0.5580794066528143,
+ 'macro_f1_score': 0.6411805589072497,
+ 'classification_report': '              precision    recall  f1-score   support\n\n          N1       0.98      0.29      0.45       193\n          N2       0.67      0.64      0.65       921\n          N3       0.99      0.59      0.74       230\n         REM       0.99      0.28      0.44       372\n        Wake       0.87      0.99      0.92      3842\n\n    accuracy                           0.84      5558\n   macro avg       0.90      0.56      0.64      5558\nweighted avg       0.85      0.84      0.82      5558\n',
+ 'confusion_matrix': array([[  56,   97,    0,    0,   40],
+        [   1,  587,    0,    0,  333],
+        [   0,    0,  136,    0,   94],
+        [   0,  154,    0,  105,  113],
+        [   0,   39,    1,    1, 3801]])}
+
+
+
+2) ensemble metrix
+3)stacking ensemble matrix 
+4) knn matrix
+{'model_name': 'K-Nearest Neighbors Classifier with PCA',
+ 'accuracy': 0.19449442245412019,
+ 'precision': 0.2995266028710898,
+ 'recall': 0.19449442245412019,
+ 'f1_score': 0.18888588285239244,
+ 'macro_precision': 0.29626494908152295,
+ 'macro_recall': 0.3593516259429221,
+ 'macro_f1_score': 0.2721453502419936,
+ 'classification_report': '              precision    recall  f1-score   support\n\n          N1       0.07      0.35      0.12       193\n          N2       0.22      0.44      0.30       921\n          N3       0.79      0.60      0.68       230\n         REM       0.08      0.32      0.13       372\n        Wake       0.32      0.09      0.14      3842\n\n    accuracy                           0.19      5558\n   macro avg       0.30      0.36      0.27      5558\nweighted avg       0.30      0.19      0.19      5558\n',
+ 'confusion_matrix': array([[  68,    4,    0,   15,  106],
+        [  53,  402,    0,   42,  424],
+        [  21,   28,  137,   43,    1],
+        [  25,    9,    0,  119,  219],
+        [ 812, 1349,   37, 1289,  355]])}
+5) xg boost matrix
+{'model_name': 'XGBoost Classifier with PCA',
+ 'accuracy': 0.8535444404462037,
+ 'precision': 0.854149858783006,
+ 'recall': 0.8535444404462037,
+ 'f1_score': 0.8432764374750964,
+ 'macro_precision': 0.7764179846955761,
+ 'macro_recall': 0.5988352735388264,
+ 'macro_f1_score': 0.6443822201455752,
+ 'classification_report': '              precision    recall  f1-score   support\n\n          N1       0.88      0.30      0.44       193\n          N2       0.64      0.79      0.71       921\n          N3       0.72      0.59      0.65       230\n         REM       0.71      0.36      0.48       372\n        Wake       0.92      0.96      0.94      3842\n\n    accuracy                           0.85      5558\n   macro avg       0.78      0.60      0.64      5558\nweighted avg       0.85      0.85      0.84      5558\n',
+ 'confusion_matrix': array([[  57,   92,    1,   18,   25],
+        [   2,  724,    2,   29,  164],
+        [   0,    2,  136,    0,   92],
+        [   4,  195,   20,  134,   19],
+        [   2,  111,   29,    7, 3693]])}   
+6) ada boost matrix 
+{'model_name': 'AdaBoost Classifier with PCA',
+ 'accuracy': 0.3123425692695214,
+ 'precision': 0.6059076551643512,
+ 'recall': 0.3123425692695214,
+ 'f1_score': 0.3528597423501809,
+ 'macro_precision': 0.32260994837061235,
+ 'macro_recall': 0.3993612450185803,
+ 'macro_f1_score': 0.2732955309371642,
+ 'classification_report': '              precision    recall  f1-score   support\n\n          N1       0.13      0.08      0.10       193\n          N2       0.33      0.50      0.39       921\n          N3       0.07      0.74      0.13       230\n         REM       0.33      0.44      0.37       372\n        Wake       0.76      0.24      0.37      3842\n\n    accuracy                           0.31      5558\n   macro avg       0.32      0.40      0.27      5558\nweighted avg       0.61      0.31      0.35      5558\n',
+ 'confusion_matrix': array([[  15,   58,    5,   89,   26],
+        [  59,  456,   34,  189,  183],
+        [   0,   25,  171,    0,   34],
+        [  23,  123,    5,  163,   58],
+        [  18,  735, 2100,   58,  931]])}
+
+
+7) neural netowrk metrics model 1 
+{'model_name': 'Neural Network Model', 'accuracy': 0.5883411299028427, 'precision': 0.5220064570178142, 'recall': 0.5883411299028427, 'f1_score': 0.5519812132221726, 'macro_precision': 0.1788170869921272, 'macro_recall': 0.18402984941719014, 'macro_f1_score': 0.17834831799796805, 'classification_report': '              precision    recall  f1-score   support\n\n           0       0.11      0.05      0.07       193\n           1       0.18      0.16      0.17       920\n           2       0.08      0.10      0.09       230\n           3       0.00      0.00      0.00       372\n           4       0.70      0.81      0.75      3839\n           5       0.00      0.00      0.00         4\n\n    accuracy                           0.59      5558\n   macro avg       0.18      0.18      0.18      5558\nweighted avg       0.52      0.59      0.55      5558\n', 'confusion_matrix': array([[   9,   32,    9,    0,  143,    0],
+       [  15,  143,   56,    0,  706,    0],
+       [   4,   31,   22,    0,  173,    0],
+       [   2,   57,   21,    0,  292,    0],
+       [  52,  515,  174,    2, 3096,    0],
+       [   0,    1,    0,    0,    3,    0]])}
